@@ -1,0 +1,70 @@
+.game_container{
+    display: grid;
+    width: 1200px;
+    height: 900px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "tl tl tl tl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf";
+    gap: 20px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tl;
+    border: 5px solid black;
+    font-size: 36px;
+    font-weight: bold;
+}
+.game_label{
+    grid-area: gl;
+    border: 5px solid black;
+}
+.info{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: inf;
+    background: white;
+    border: 5px solid black;
+}
+.info div{
+    display: flex;
+    border: 5px solid black;
+    font-size: 28px;
+    width: 150px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .next_label{
+    width: 150px;
+    height: 150px;
+}
+
+.game_label {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 1px;
+    background-color: #333;
+    width: 100%;
+    height: 760px;
+  }
+  .cell {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+  }
+  .active {
+    background-color: red;
+  }

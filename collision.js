@@ -6,7 +6,7 @@ function checkCollision(activeTetramino, offsetX, offsetY) {
 
                 if (
                     x + offsetX < 0 || // collision left
-                    x + offsetX <= cols || // collision right
+                    x + offsetX >= cols || // collision right
                     y + offsetY >= rows || // collision end label
                     grid[y + offsetY] && grid[y + offsetY][x + offsetX] // collision other tetramino               
                 ) {

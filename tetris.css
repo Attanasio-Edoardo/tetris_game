@@ -12,6 +12,7 @@ body {
     display: grid;
     width: 1200px;
     height: 900px;
+<<<<<<< HEAD
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
@@ -27,6 +28,23 @@ body {
   }
   
   .title {
+=======
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "tl tl tl tl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf"
+    "gl gl gl gl inf inf";
+    gap: 20px;
+    margin-left: 30vh;
+}
+
+.title{
+>>>>>>> main
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +53,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+<<<<<<< HEAD
     color: white;
   }
   
@@ -56,6 +75,16 @@ body {
   }
   
   .info {
+=======
+}
+
+.game_label{
+    grid-area: gl;
+    border: 5px solid black;
+}
+
+.info{
+>>>>>>> main
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -63,6 +92,7 @@ body {
     grid-area: inf;
     background: rgba(0, 0, 0, 0.5);
     border: 5px solid black;
+<<<<<<< HEAD
     z-index: 1;
   
     color: white;
@@ -76,6 +106,11 @@ body {
   }
   
   .info div {
+=======
+}
+
+.info div{
+>>>>>>> main
     display: flex;
     border: 5px solid black;
     font-size: 28px;
@@ -88,17 +123,37 @@ body {
   .info .next_label {
     width: 150px;
     height: 150px;
+<<<<<<< HEAD
     border: 1px solid white;
   }
   
   
   
+=======
+}
+
+.game_label {
+    margin-left: 13%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 1px;
+    background-color: #333;
+    width: 71%;
+    height: 790px;
+  }
+  
+>>>>>>> main
   .cell {
     width: 55px;
     height: 55px;
     background-color: lightgrey;
   }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> main
   .active {
     background-color: red;
   }
